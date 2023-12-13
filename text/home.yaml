@@ -1,0 +1,53 @@
+title: note
+section:
+  intro:
+    title: Next generation data modelling language
+    action:
+      title: See examples
+      link: /case
+  comparison:
+    title: Prioritizing Humans and Machines
+    description:
+      tree: The simplest possible form of trees, for reading and writing.
+      list: Knowledge is inherently tree structured, and you can link trees to form networks.
+  example:
+    title: Enabling Clean Structured Note-Taking
+    description: Domain-Specific Languages of all shapes and kinds.
+    example:
+      - title: Chinese Text
+        link: /case/text
+      - title: PDF Generator
+        link: /case/generator
+      - title: JSON Grammar
+        link: /case/grammar
+      - title: Function
+        link: /case/function
+  syntax:
+    title: Writing Involves Just a Few Pieces
+    description: It is a minimal language, which can be built upon into arbitrary frameworks.
+    column:
+      left:
+        - title: Terms
+        - title: Numbers
+        - title: Codes
+      right:
+        - title: Strings
+        - title: Paths
+        - title: Comments
+  thought:
+    title: Make Thoughts Computable
+    action:
+      spec:
+        title: Read the Spec
+      or: or
+      text:
+        title: Explore some Notes
+  footer:
+    - title: case
+      link: /case
+    - title: form
+      link: /form
+    - title: text
+      link: /text
+    - title: vibe
+      link: /vibe
