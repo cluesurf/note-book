@@ -1,30 +1,20 @@
 title: note
 section:
   intro:
-    title: Next generation data modelling language
+    title: Data Modelling for the Next Generation
     action:
       title: See examples
       link: /case
   comparison:
-    title: Prioritizing Humans and Machines
-    description:
-      tree: The simplest possible form of trees, for reading and writing.
-      list: Knowledge is inherently tree structured, and you can link trees to form networks.
-  example:
-    title: Enabling Clean Structured Note-Taking
-    description: Domain-Specific Languages of all shapes and kinds.
-    example:
-      - title: Chinese Text
-        link: /case/text
-      - title: PDF Generator
-        link: /case/generator
-      - title: JSON Grammar
-        link: /case/grammar
-      - title: Function
-        link: /case/function
+    title: Prioritized for Humans _and_ Machines
+  tree:
+    title: Map Your Thoughts into Structured Knowledge
+    description: |
+      These trees are probably the simplest and easiest trees of text to read and write which you could conjure up. Frameworks can be built around the trees to process them, link them together into networks, and allow them to be used for optimized computation. The resulting runtime structures can be finely tuned infinitely from there, resulting in clean code, readable data, and fast programs.
+
+      When taking notes in structured ways, Note makes it practical and straightforward to quickly whip together intuitive Domain-Specific Languages (DSLs) of all shapes and kinds. It is also more powerful than pure JSON or YAML, because it can be thought of as code. It's all in how you leverage it to get the most power from it. It doesn't come with any bells and whistles, all of that can be found in tools built on top of this like [BaseNote](https://base.surf).
   syntax:
-    title: Writing Involves Just a Few Pieces
-    description: It is a minimal language, which can be built upon into arbitrary frameworks.
+    title: Here are the Hello World Features
     column:
       left:
         - title: Terms
@@ -35,13 +25,9 @@ section:
         - title: Paths
         - title: Comments
   thought:
-    title: Make Thoughts Computable
+    title: Take a Deeper Dive
     action:
-      spec:
-        title: Read the Spec
-      or: or
-      text:
-        title: Explore some Notes
+      title: Read the Spec
   footer:
     - title: case
       link: /case

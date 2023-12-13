@@ -1,8 +1,8 @@
-# The Syntax of LinkText
+# The Syntax of NoteText
 
 ## Overview
 
-LinkText is a little more than a
+NoteText is a little more than a
 markup language, tending toward a programming language. It is a way to
 model information and computation in an easy to read and write format,
 suitable for hierarchical note taking and other means of capturing data
@@ -21,7 +21,7 @@ those are just style conventions.
 
 ## Example
 
-First, some images of different usages of LinkText. Here are a few
+First, some images of different usages of NoteText. Here are a few
 examples from existing code. The first is how you might define a "deck"
 (a "package" of Link code). The second is the first part of the Tao Te
 Ching captured in a tree, and the later we show how you might write a
@@ -35,7 +35,7 @@ A package definition:
 ```link
 deck @termsurf/base
   mark <0.0.1>
-  head <A LinkText Package Manager>
+  head <A NoteText Package Manager>
   term link-text
   term computation
   term philosophy
@@ -325,7 +325,7 @@ strings as well with curly brackets.
 ## Types
 
 All of the TypeScript types below, which have a `form`, are part of the
-Link Tree, the AST for LinkText. This is the exact structure of the AST.
+Link Tree, the AST for NoteText. This is the exact structure of the AST.
 
 ```ts
 export type LinkFold = {
@@ -341,10 +341,10 @@ export type LinkTree = {
 export type LinkFork = {
   fold?: LinkFold;
   nest: Array<
-    | LinkText
+    | NoteText
     | LinkFork
     | LinkSize
-    | LinkText
+    | NoteText
     | LinkCord
     | LinkNick
     | LinkCull
@@ -387,7 +387,7 @@ export type LinkKnit = {
 
 export type LinkNick = {
   nest?: LinkFork;
-  base?: LinkKnit | LinkText;
+  base?: LinkKnit | NoteText;
   size: number;
   form: LinkName.Nick;
   fold?: LinkFold;
@@ -395,11 +395,11 @@ export type LinkNick = {
 
 export type LinkCord = {
   form: LinkName.Cord;
-  base?: LinkText;
+  base?: NoteText;
   leaf: Leaf;
 };
 
-export type LinkText = {
+export type NoteText = {
   nest: Array<LinkCord | LinkNick>;
   form: LinkName.Text;
   base?: LinkCull | LinkFork;
@@ -433,7 +433,7 @@ A `LinkCord` is a contiguous string. A `LinkNick` is the curly brackets
 and everything nested inside. And a `LinkCull` is the square brackets
 and everything nested inside.
 
-A `LinkText` is a weaving of `LinkCord` and `LinkNick`, inside the
+A `NoteText` is a weaving of `LinkCord` and `LinkNick`, inside the
 text-delimiting angle brackets. So it is strings separated by optional
 interpolation basically.
 
