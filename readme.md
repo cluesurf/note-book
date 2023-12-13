@@ -8,7 +8,7 @@
 
 <h3 align='center'>@termsurf/note-book</h3>
 <p align='center'>
-  The documentationn for NoteText
+  The documentation for NoteText
 </p>
 
 <br/>
